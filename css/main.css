@@ -83,6 +83,12 @@ iframe {
         background-size: cover;
         height: 100%;
     }
+    /*------------------------------------------------------------------------------
+    MAIN
+    ------------------------------------------------------------------------------*/
+    .left {
+        padding: 2em 2em;
+    }
 }
 
 
@@ -103,29 +109,36 @@ iframe {
 /*------------------------------------------------------------------------------
 MAIN
 ------------------------------------------------------------------------------*/
-
-.left,
+#left {
+    padding: 2em 2em;
+}
 .right {
     padding: 2em;
 }
 
 .left {
-    background-color: lightblue;
+    background-color: #1D2124;
     flex-basis: 600px;
 }
 
+.left li {
+    margin: 1em 0;
+}
+
 .left a {
+    padding: 0.5em;
     font-weight: bold;
-    color: black;
-    padding: 0.3em;
+    color: white;
+    transition: all 1s ease-in-out;
 }
 
 .left a:hover {
+    color: black;
     background-color: #eee;
 }
 
 .right {
-    background-color: gold;
+    background-color: #FFC924;
     flex-basis: 1800px;
 }
 
