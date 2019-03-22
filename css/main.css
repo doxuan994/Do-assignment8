@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Full height viewport */
+body { height: 100vh; }
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+}
+img, figure {
+    max-width: 100%;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+q {
+    font-style: italic;
+}
+ul {
+    list-style: none;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+iframe {
+    display :block;
+    margin: 2em auto;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    iframe {
+        width: 500px;
+        height: 325px;
+    }
+}
+/* Full height window by using CSS Flexbox Layout */
+@media only screen and (min-width: 1200px) {
+    .flex-full-height {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: auto;
+        min-height : 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    iframe {
+        width: 800px;
+        height: 450px;
+    }
+    /*------------------------------------------------------------------------------
+    HEADER
+    ------------------------------------------------------------------------------*/
+
+    #header {
+        background-color: white;
+        background-image: url("../img/background-content-header.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+MAIN
+------------------------------------------------------------------------------*/
+
+.left,
+.right {
+    padding: 2em;
+}
+
+.left {
+    background-color: lightblue;
+    flex-basis: 600px;
+}
+
+.left a {
+    font-weight: bold;
+    color: black;
+    padding: 0.3em;
+}
+
+.left a:hover {
+    background-color: #eee;
+}
+
+.right {
+    background-color: gold;
+    flex-basis: 1800px;
+}
+
+
+.inner {
+    padding: 2em 0;
+}
+
+
+.inner-child {
+    padding: 1em 0;
+}
+
+.inner-child h4,
+.inner-child p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------*/
+#site-footer {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    align-items: center;
+}
+#site-footer a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+Styling for COMPONENTS
+------------------------------------------------------------------------------*/
+
+/* Tools I used to create the game */
+
+.gimp-box {
+    background-color: #fafafa;
+    padding: 3em;
+}
+
+.unrealengine { color: black; }
+.gimp { color: darkslategray; }
+#adobe { color: brown; }
+
+#adobe,
+.unrealengine,
+.gimp {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* Characters */
+#rock,
+#fire,
+#snow {
+    margin: 2em auto;
+    width: 800px;
+}
+
+#rock {
+    background-color: #452E24;
+}
+#fire {
+    background-color: #2F3622;
+}
+#snow {
+    background-color: #152731;
+}

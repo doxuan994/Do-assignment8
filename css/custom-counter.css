@@ -1,0 +1,33 @@
+.custom-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.custom-counter span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.custom-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 20px;
+}
+
+.custom-counter li::before {
+    content: counter(step-counter);
+}
+
+.custom-counter li::before {
+    font-size: 24px;
+    background-color: rgb(0,200,200);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 3px 12px;
+    margin-right: 5px;
+}
+
+.custom-counter li:nth-child(1):before { background-color: #1B2124; }
+.custom-counter li:nth-child(2):before { background-color: #74191E; }
+.custom-counter li:nth-child(3):before { background-color: #152731; }
