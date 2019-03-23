@@ -42,7 +42,10 @@ iframe {
     border: 0;
 }
 
-
+section {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 
 
 
@@ -118,7 +121,8 @@ MAIN
 
 .left {
     background-color: #1D2124;
-    flex-basis: 600px;
+    -ms-flex-preferred-size: 600px;
+        flex-basis: 600px;
     padding: 2em;
 }
 
@@ -126,6 +130,7 @@ MAIN
     padding: 0.5em;
     font-weight: bold;
     color: white;
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
@@ -136,7 +141,8 @@ MAIN
 
 .right {
     background-color: #FFC924;
-    flex-basis: 1800px;
+    -ms-flex-preferred-size: 1800px;
+        flex-basis: 1800px;
 }
 
 .inner {
@@ -167,7 +173,9 @@ FOOTER
 #site-footer {
     background-color: black;
     color: white;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #site-footer a {
     color: white;
