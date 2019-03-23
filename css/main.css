@@ -39,6 +39,7 @@ h3 {
 iframe {
     display :block;
     margin: 2em auto;
+    border: 0;
 }
 
 
@@ -52,7 +53,7 @@ iframe {
 @media only screen and (min-width: 600px) {
     iframe {
         width: 500px;
-        height: 325px;
+        height: 281.25px;
     }
 }
 /* Full height window by using CSS Flexbox Layout */
@@ -89,6 +90,9 @@ iframe {
     .left {
         padding: 2em 2em;
     }
+    .left li {
+        margin: 1em 0;
+    }
 }
 
 
@@ -109,9 +113,6 @@ iframe {
 /*------------------------------------------------------------------------------
 MAIN
 ------------------------------------------------------------------------------*/
-#left {
-    padding: 2em 2em;
-}
 .right {
     padding: 2em;
 }
@@ -119,10 +120,7 @@ MAIN
 .left {
     background-color: #1D2124;
     flex-basis: 600px;
-}
-
-.left li {
-    margin: 1em 0;
+    padding: 2em;
 }
 
 .left a {
@@ -142,11 +140,9 @@ MAIN
     flex-basis: 1800px;
 }
 
-
 .inner {
     padding: 2em 0;
 }
-
 
 .inner-child {
     padding: 1em 0;
