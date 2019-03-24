@@ -95,6 +95,18 @@ section {
     #sidebar {
         position: relative;
     }
+
+    /* Tools I used to create the game */
+
+    .gimp-box {
+        background-color: #fafafa;
+        padding: 3em;
+        margin-bottom: 1em;
+    }
+
+    .gimp-info {
+        border-left: 10px solid #1D2124;
+    }
 }
 
 
@@ -192,13 +204,18 @@ FOOTER
 /*------------------------------------------------------------------------------
 Styling for COMPONENTS
 ------------------------------------------------------------------------------*/
-
 /* Tools I used to create the game */
 
 .gimp-box {
     background-color: #fafafa;
-    padding: 3em;
+    padding: 1em;
+    margin-bottom: 1em;
 }
+
+.gimp-info {
+    border-left: 6px solid #1D2124;
+}
+
 
 .unrealengine { color: black; }
 .gimp { color: darkslategray; }
