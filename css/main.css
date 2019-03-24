@@ -86,8 +86,12 @@ section {
     /*--------------------------------------------------------------------------
     MAIN
     --------------------------------------------------------------------------*/
+    .right {
+        padding: 2em;
+    }
+
     .left {
-        padding: 2em 2em;
+        padding: 2em;
     }
     .left li {
         margin: 1em 0;
@@ -127,17 +131,31 @@ section {
 /*------------------------------------------------------------------------------
 MAIN
 ------------------------------------------------------------------------------*/
-.right {
-    padding: 2em;
-}
 
+/* Flexbox CSS3 Layout */
 .left {
     background-color: #1D2124;
     -ms-flex-preferred-size: 600px;
         flex-basis: 600px;
-    padding: 2em;
+}
+.right {
+    background-color: #FFC924;
+    -ms-flex-preferred-size: 1800px;
+        flex-basis: 1800px;
 }
 
+
+
+
+
+/* Styling for DIVs of the main content */
+.right {
+    padding: 1.4em;
+}
+
+.left {
+    padding: 1.4em;
+}
 .left a {
     padding: 0.5em;
     font-weight: bold;
@@ -145,26 +163,18 @@ MAIN
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-
 .left a:hover {
     color: black;
     background-color: #eee;
 }
 
-.right {
-    background-color: #FFC924;
-    -ms-flex-preferred-size: 1800px;
-        flex-basis: 1800px;
-}
 
 .inner {
     padding: 2em 0;
 }
-
 .inner-child {
     padding: 1em 0;
 }
-
 .inner-child h4,
 .inner-child p {
     text-align: center;
