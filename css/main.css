@@ -105,6 +105,9 @@ section {
     .gimp-box {
         background-color: #fafafa;
         padding: 3em;
+    }
+
+    .gimp-box:first-child {
         margin-bottom: 1em;
     }
 
