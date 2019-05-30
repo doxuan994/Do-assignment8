@@ -3,6 +3,8 @@ let sidebar = document.getElementById('sidebar');
 let footer = document.getElementById('site-footer');
 let offsetTop = sidebar.offsetTop;
 
+console.log(getComputedStyle(sidebar).top);
+
 let windowInnerWidth = window.innerWidth;
 window.addEventListener('scroll', function() {
     let footerClientY = footer.getBoundingClientRect().top;
